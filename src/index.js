@@ -10,4 +10,8 @@ app.get('/', (req, res) => {
 
 app.set('view engine','ejs');
 app.use(express.static(path.join(process.cwd(), 'public')));
+
 app.listen(app.get('port'));
+
+
+console.log("Tamos activo")
