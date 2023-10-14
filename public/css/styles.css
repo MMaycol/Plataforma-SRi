@@ -58,7 +58,7 @@ nav a {
 
 nav a:hover {
     padding: 10px;
-    background-color: #ff5733;
+    background-color: #3BA794;
     border-radius: 25px;
 }
 
@@ -139,15 +139,15 @@ footer {
 
 .card-button {
     display: inline-block;
-    background-color: #ff5733;
+    background-color: #3BA794;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 30px;
     margin-top: 10px; /* Espacio reducido entre el botón y la descripción */
 }
 
 .card-button:hover {
-    background-color: #d64b2c;
+    background-color: #359482;
   }
 
