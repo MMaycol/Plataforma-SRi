@@ -1,62 +1,182 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main_styles.css">
     <title>Pagina principal - SRi</title>
+    <script src="https://kit.fontawesome.com/2cb25f2c39.js"></script>
 </head>
+
 <body>
+
     <header>
-        <div class="img_logo">
-            <img src="./images/logo.png" alt="Imagen del proyecto" width="70" height="70">
-            <h1>SRi </h1>
-        </div>
+
         <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
+
+            <div>
+                <img src="/images/logo.png" alt="Logo" class="logo">
+            </div>
+
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul class="nav-menu">
+                <li><a class="active" href="#">Inicio</a></li>
+                <li><a href="#">Precios</a></li>
                 <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Servicios</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
+
         </nav>
+
+        <div class="banner-text container">
+            <div class="text-header">
+
+                <h1> <strong>SRi</strong> <br />
+                    Sistema de riego inteligente
+                </h1>
+
+                <p> Un sistema de riego eficiente es crucial para garantizar que los cultivos reciban la cantidad
+                    adecuada de agua en el momento preciso.
+                    <br />
+                    El agua es un recurso invaluable en el mundo rural, por lo
+                    que la optimización del riego es esencial.
+                </p>
+
+                <a class="btn-a" href="#">Mas Informacion</a>
+
+            </div>
+
+            <div class="img-header">
+                <img src="./images/ref.png" alt="">
+            </div>
+
+        </div>
+
     </header>
 
-    <main>
-                
-                <div class="card">
-                    <h2 class="card-title">SRi</h2>
-                    <p class="card-description">Un sistema de riego inteligente SRi, determina el tiempo necesario para tus cultivos a gran o media escala, ahorrando los recursos fundamentales a la hora de cultivar.
-                        Un sistema que implementa algoritmos de análisis de datos y probabilidades para la mejor eficiencia.
-                    </p>
-                    <a href="#" class="btn card-button">Ordenar ahora</a>
+    <section>
+
+        <div class="about container">
+            <h2>Nosotros</h2>
+            <p>
+                Somos un equipo apasionado de innovadores en el campo de la agricultura y la tecnología. Estamos
+                dedicados a la creación de soluciones de riego inteligente que impulsan la eficiencia, la sostenibilidad
+                y el éxito en la agricultura. Nuestra experiencia en tecnología avanzada y nuestro compromiso con la
+                conservación de recursos naturales nos impulsan a ofrecer sistemas de riego que marcan la diferencia.
+                Creemos en un futuro donde la agricultura sea más inteligente y más respetuosa con el medio ambiente.
+                Únete a nosotros en este emocionante viaje hacia la agricultura del mañana.
+            </p>
+
+            <div class="icons-about">
+                <div class="icon-about">
+                    <img src="" alt="">
+                    <div class="icon-text">
+                        <h3>Item</h3>
+                        <p>Lorem ipsum</p>
+                    </div>
                 </div>
 
-                <img src="./images/ola.jpg" alt="Imagen del proyecto" width="450" height="450">
+                <div class="icon-about">
+                    <img src="" alt="">
+                    <div class="icon-text">
+                        <h3>Item</h3>
+                        <p>Lorem ipsum</p>
+                    </div>
+                </div>
 
+                <div class="icon-about">
+                    <img src="" alt="">
+                    <div class="icon-text">
+                        <h3>Item</h3>
+                        <p>Lorem ipsum</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <a class="btn-b" href="#">Mas Informacion</a>
+
+        </div>
+
+    </section>
+
+    <main class="services">
+        <div class="container">
+
+            <div class="services-container">
+                <div>
+
+                    <div class="services-cards">
+                        <div class="card">
+                            <img src="" alt="">
+                            <h3>SRi Conectado</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                    </div>
+
+                    <div class="services-cards">
+                        <div class="card">
+                            <img src="" alt="">
+                            <h3>SRi No Conectado</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="services-text">
+                    <h2>Servicio</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit a, ipsam in illum inventore minima
+                        corporis est. Dolorum perferendis at, ex, iste aliquam laboriosam dignissimos aliquid, unde
+                        explicabo facere nobis.
+                    </p>
+
+                    <a class="btn-c" href="#">Contacto</a>
+
+                </div>
+            </div>
+
+        </div>
     </main>
 
-    <section class="about">
-        <h2>Acerca de Nosotros</h2>
-        <p>Somos un proyecto de innovacion dedicado a la irrigacion agricola, de forma inteligente y eficiente</p>
-    </section>
 
-    <section class="services">
-        <h2>Nuestros Servicios</h2>
-        <ul>
-            <li>Servicio 1</li>
-            <li>Servicio 2</li>
-            <li>Servicio 3</li>
-        </ul>
-    </section>
+    <footer class="footer">
 
-    <section class="group">
-        <h2>Equipo de trabajo</h2>
-        <p>Equipo de trabajo de SRi...</p>
-    </section>
+        <div class="footer-sec container">
+            <h2>Contacto</h2>
+            <p class="f-txt">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur incidunt distinctio, magnam qui
+                nisi iste, officiis sed ut inventore similique asperiores modi consequatur, id assumenda tenetur
+                blanditiis omnis odit error!
+            </p>
 
-    <footer>
-        <p>&copy; 2023 SRi. Todos los derechos reservados.</p>
+            <div class="content-footer">
+                <div class="links">
+                    <h3>Enlaces</h3>
+                    <p>Lorem</p>
+                    <p>Lorem</p>
+                    <p>Lorem</p>
+                    <p>Lorem</p>
+
+                </div>
+                <div class="links">
+                    <h3>Enlaces</h3>
+                    <p>Lorem</p>
+                    <p>Lorem</p>
+                    <p>Lorem</p>
+                    <p>Lorem</p>
+
+                </div>
+            </div>
+        </div>
+
     </footer>
+
 </body>
+
 </html>
