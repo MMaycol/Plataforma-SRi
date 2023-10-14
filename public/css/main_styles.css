@@ -93,7 +93,7 @@
 
 .container {
     max-width: none;
-    /*margin: 30px;*/
+    margin: 30px;
 }
 
 
@@ -272,5 +272,6 @@
 .btn-b {
     display: block;
     margin-top: 20px;
-    background: linear-gradient(to bottom, rgb(0, 238, 255), rgb(230, 0 235));
+    background: linear-gradient(to bottom, rgb(0, 238, 255), rgb(0, 188, 235))
+
 }
