@@ -93,7 +93,7 @@
 
 .container {
     max-width: none;
-    margin: 30px;
+    /*margin: 30px;*/
 }
 
 
@@ -106,7 +106,7 @@
 .text-header {
     margin-right: 0px;
 
-    margin-bottom: 45px;
+    margin-bottom: 00px;
 }
 
 .text-header h1 {
