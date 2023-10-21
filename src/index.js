@@ -1,17 +1,5 @@
-import app from "./app";
-import path from "path";
+import app from './app'
 
-const express = require('express');
+app.listen(app.get('port'))
 
-// Define la ruta para la página de inicio y renderiza una vista
-app.get('/', (req, res) => {
-    res.render('inicio', { title: 'Página de Inicio' });
-  });
-
-app.set('view engine','ejs');
-app.use(express.static(path.join(process.cwd(), 'public')));
-
-app.listen(app.get('port'));
-
-
-console.log("Tamos activo")
+console.log('server en puerto',app.get('port'));

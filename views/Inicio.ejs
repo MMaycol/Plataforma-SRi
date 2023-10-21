@@ -4,16 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="./css/main_styles.css">
     <title>Pagina principal - SRi</title>
     <script src="https://kit.fontawesome.com/2cb25f2c39.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
 
     <header>
 
-        <nav>
+        <nav id="inicio" >
 
             <div class="logo-letter">
                 <img src="/images/icono.svg" alt="Logo" class="logo"> <strong class="text-sri">SRi</strong>
@@ -25,34 +28,35 @@
             </label>
 
             <ul class="nav-menu">
-                <li><a class="active" href="#">Inicio</a></li>
-                <li><a href="#">Precios</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#Nosotros">Nosotros</a></li>
+                <li><a href="#Servicios">Servicios</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+                <li><a href="/logins">Inicio Sesión</a></li> <!-- Este enlace no tendrá desplazamiento suave -->
             </ul>
+            
+            
 
         </nav>
 
-        <div class="banner-text container">
+        <div class="banner-text container"   class="inicio">
             <div class="text-header">
 
-                <h1>
+                <h1 class="animacion-texto">
                    Sistema de riego inteligente
                 </h1>
 
-                <p> Un sistema de riego eficiente es crucial para garantizar que los cultivos reciban la cantidad
+                <p class="animacion-texto"> Un sistema de riego eficiente es crucial para garantizar que los cultivos reciban la cantidad
                     adecuada de agua en el momento preciso.
                     <br />
                     El agua es un recurso invaluable en el mundo rural, por lo
                     que la optimización del riego es esencial.
                 </p>
 
-                <a class="btn-a" href="#">Mas Informacion</a>
-
-            </div>
+                           </div>
 
             <div class="img-header">
-                <img src="./images/ref.svg" alt="">
+                <img  class="elemento-rotacion" src="./images/ref.svg" alt="">
             </div>
 
         </div>
@@ -61,9 +65,9 @@
 
     <section>
 
-        <div class="about container">
-            <h2>Nosotros</h2>
-            <p>
+        <div id="Nosotros" class="about container">
+            <h2 class="elemento-izquierda">Nosotros</h2>
+            <p class="elemento-abajo">
                 Somos un equipo apasionado de innovadores en el campo de la agricultura y la tecnología. Estamos
                 dedicados a la creación de soluciones de riego inteligente que impulsan la eficiencia, la sostenibilidad
                 y el éxito en la agricultura. Nuestra experiencia en tecnología avanzada y nuestro compromiso con la
@@ -71,124 +75,206 @@
                 Creemos en un futuro donde la agricultura sea más inteligente y más respetuosa con el medio ambiente.
                 Únete a nosotros en este emocionante viaje hacia la agricultura del mañana.
             </p>
-
-            <div class="icons-about">
-                <div class="icon-about">
-                    <img src="" alt="">
-                    <div class="icon-text">
-                        <h3>Item</h3>
-                        <p>Lorem ipsum</p>
-                    </div>
-                </div>
-
-                <div class="icon-about">
-                    <img src="" alt="">
-                    <div class="icon-text">
-                        <h3>Item</h3>
-                        <p>Lorem ipsum</p>
-                    </div>
-                </div>
-
-                <div class="icon-about">
-                    <img src="" alt="">
-                    <div class="icon-text">
-                        <h3>Item</h3>
-                        <p>Lorem ipsum</p>
-                    </div>
-                </div>
-
+        
             </div>
 
-            <a class="btn-b" href="#">Mas Informacion</a>
+            
 
         </div>
 
     </section>
+    <h2 class="elemento-izquierda Resañas">Reseñas</h2>
+    <div class="reseñas">
+        <div class="reseña">
+            <div class="reseña-info">
+                <img src="./images/agricultor1.jpg" alt="Agricultor 1">
+                <h2>María Rodríguez</h2>
+            </div>
+            <p class="reseña-texto">La automatización del riego ha transformado mi cultivo en un oasis. ¡Mis plantas nunca han estado tan saludables!</p>
+        </div>
+        <div class="reseña">
+            <div class "reseña-info">
+                <img src="./images/agricultor2.jpg" alt="Agricultor 2">
+                <h2>José Pérez</h2>
+            </div>
+            <p class="reseña-texto">El riego automatizado ha sido una gran inversión para mi granja. Mis cultivos están más felices que nunca.</p>
+        </div>
+        <div class="reseña">
+            <div class="reseña-info">
+                <img src="./images/agricultor3.jpg" alt="Agricultor 3">
+                <h2>Laura Gómez</h2>
+            </div>
+            <p class="reseña-texto">Estoy impresionada con la instalación del sistema de riego automatizado. Ahorro tiempo y mis cosechas son más abundantes.</p>
+        </div>
+        <div class="reseña">
+            <div class="reseña-info">
+                <img src="./images/agricultor4.jpg" alt="Agricultor 4">
+                <h2>Carlos Martínez</h2>
+            </div>
+            <p class="reseña-texto">Mi cultivo nunca ha estado tan verde y saludable gracias a la automatización del riego. Una inversión inteligente.</p>
+        </div>
+        <div class="reseña">
+            <div class="reseña-info">
+                <img src="./images/agricultor5.jpg" alt="Agricultor 5">
+                <h2>Isabel López</h2>
+            </div>
+            <p class="reseña-texto">¡Mi producción de frutas ha aumentado gracias al riego automatizado! Mis árboles están más exuberantes que nunca.</p>
+        </div>
+        <div class="reseña">
+            <div class="reseña-info">
+                <img src="./images/agricultor6.jpg" alt="Agricultor 6">
+                <h2>Luis Hernández</h2>
+            </div>
+            <p class="reseña-texto">La automatización del riego ha simplificado mi trabajo en el campo. Mis plantaciones están en su mejor estado.</p>
+        </div>
+        <div class="reseña">
+            <div class="reseña-info">
+                <img src="./images/agricultor7.jpg" alt="Agricultor 7">
+                <h2>Ana Sánchez</h2>
+            </div>
+            <p class="reseña-texto">El riego automatizado ha hecho que el cuidado de mis cultivos sea muy sencillo. ¡Mis cosechas son abundantes y saludables!</p>
+        </div>
+    </div>
+    
+
 
     <main class="services">
-        <div class="container">
-
-            <div class="services-container">
-                <div>
-
-                    <div class="services-cards">
-                        <div class="card">
-                            <img src="" alt="">
-                            <h3>SRi Conectado</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-
-                    <div class="services-cards">
-                        <div class="card">
-                            <img src="" alt="">
-                            <h3>SRi No Conectado</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="services-text">
-                    <h2>Servicio</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit a, ipsam in illum inventore minima
-                        corporis est. Dolorum perferendis at, ex, iste aliquam laboriosam dignissimos aliquid, unde
-                        explicabo facere nobis.
-                    </p>
-
-                    <a class="btn-c" href="#">Contacto</a>
-
-                </div>
+        <div class="contendor_servicio"  id="Servicios">
+            <div class="servicio-content">
+                <h1 class="elemento-opacidad">Servicios</h1>
+                <p class="elemento-opacidad">Descubre la revolución en el riego de tus plantas.</p>
             </div>
-
         </div>
+    <section class="Card_infoProducto" id="miTarjeta">
+        
+        <div class="card" >
+          <div class="card-image">
+            <img class="elemento-opacidad" src="./images/mujer-joven-controlando-plantacion (1).jpg" alt="Imagen 1">
+          </div>
+          <div class="card-content">
+            <h2 class="elemento-color">Sistema de Riego Conectado a la API Climatológica</h2>
+            <p class="elemento-abajo">Controla el riego de tus plantas de manera precisa y automatizada utilizando datos climáticos en tiempo real. Nuestro sistema conectado a la API climatológica garantiza que tus plantas reciban la cantidad adecuada de agua en todo momento.</p>
+          </div>
+        </div>
+      
+        <div class="card"  >
+          <div class="card-image">
+            <img class="elemento-opacidad" src="./images/mujer-joven-controlando-plantacion.jpg" alt="Imagen 2">
+          </div>
+          <div class="card-content">
+            <h2 class="elemento-color">Sistema de Riego por Bluetooth</h2>
+            <p class="elemento-abajo">Riega tus plantas de forma conveniente y personalizada a través de la tecnología Bluetooth. Controla el riego desde tu dispositivo móvil y adapta las configuraciones según tus preferencias.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="ContenedorPadre_productos">
+        <div class="producto">
+            <h3>Caracteristicas Servicio 1</h3>
+            <div class="categoria">
+                <i class="fas fa-wifi"></i>
+                <span class="categoriaInfo">Conectividad a Internet</span>
+            </div>
+            <div class="categoria">
+                <i class="fas fa-cloud-sun"></i>
+                <span class="categoriaInfo">Cuenta con servicios meteorológicos</span>
+            </div>
+            <div class="categoria">
+                <i class="fas fa-chart-line"></i>
+                <span class="categoriaInfo">Monitoreo en tiempo real</span>
+            </div>
+            <div class="categoria">
+                <i class="fas fa-history"></i>
+                <span class="categoriaInfo">Historial de los riegos realizados</span>
+            </div>
+            <div class="categoria">
+                <i class="fas fa-bell"></i>
+                <span class="categoriaInfo">Alerta con notificaciones push de activaciones de riego</span>
+            </div>
+            <div class="categoria">
+                <i class="fas fa-chart-bar"></i>
+                <span class="categoriaInfo">Datos estadísticos del historial de riego</span>
+            </div>
+            <div class="categoria">
+                <i class="fas fa-sliders-h"></i>
+                <span class="categoriaInfo">Implementación de algoritmo de evaporatranspiración</span>
+            </div>
+            <div class="categoria">
+                <i class="fas fa-mobile-alt"></i>
+                <span class="categoriaInfo">Configura tu riego inteligente desde cualquier lugar desde tu móvil.</span>
+            </div>
+        </div>
+    
+        <div class="producto">
+            <h3>Caracteristicas Servicio 2</h3>
+            <div class="categoria">
+                <i class="fas fa-bluetooth"></i>
+                <span class="categoriaInfo">Conectividad via Bluetooth</span>
+            </div>
+            <div class="categoria">
+                <i class="fas fa-mobile-alt"></i>
+                <span class="categoriaInfo">Configura tu sistema de riego inteligente desde tu dispositivo móvil.</span>
+            </div>
+            <div class="categoria">
+                <i class="fas fa-sliders-h"></i>
+                <span class="categoriaInfo">Implementación de algoritmo de evaporatranspiración</span>
+            </div>
+            <div class="categoria">
+                <i class="fas fa-clock"></i>
+                <span class="categoriaInfo">Agrega horarios de activación de tu riego programados</span>
+            </div>
+            <div class="categoria">
+                <i class="fas fa-hourglass-half"></i>
+                <span class="categoriaInfo">Automatiza el tiempo de activación del riego</span>
+            </div>
+        </div>
+    </section>
+    
+
+       
     </main>
 
 
-    <footer class="footer">
+    <footer class="pie-pagina" id="Contacto">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                    
+                        <img class="elemento-derecha" src="./images/icono.svg" alt="Logo de SLee Dw">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+              <h2 class="elemento-derecha">Contactanos</h2>
+              <p class="elemento-derecha" ><i class="fas fa-map-marker-alt"></i> 203 Fake St. Mountain View, San Francisco, California, USA</p>
+              <p class="elemento-derecha" ><i class="fas fa-phone"></i> +2 392 3929 210</p>
+              <p class="elemento-derecha" ><i class="fas fa-envelope"></i> info@example.com</p>
+          </div>
+          
+            <div class="box">
+                <h2 class="elemento-derecha">SIGUENOS</h2>
+                <div class="red-social">
+                  <a class="elemento-derecha fa fa-facebook" href="https://www.facebook.com/?locale=es_LA"></a>
+                  <a class="elemento-derecha fa fa-instagram" href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F&hl=es-es&aa_click=8891933284028179"></a>
+                  <a class="elemento-derecha fa fa-whatsapp" href="https://web.whatsapp.com"> </a>
 
-        <div class="footer-sec container">
-            <h2>Contacto</h2>
-            <p class="f-txt">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur incidunt distinctio, magnam qui
-                nisi iste, officiis sed ut inventore similique asperiores modi consequatur, id assumenda tenetur
-                blanditiis omnis odit error!
-            </p>
-
-            <div class="content-footer">
-                <div class="links">
-
-                    <div class="link">
-                        <h3>Enlaces</h3>
-                        <p>Lorem</p>
-                        <p>Lorem</p>
-                        <p>Lorem</p>
-                        <p>Lorem</p>
-                    </div>
-
-                    <div class="link">
-                        <h3>Enlaces</h3>
-                        <p>Lorem</p>
-                        <p>Lorem</p>
-                        <p>Lorem</p>
-                        <p>Lorem</p>
-                    </div>
-
-                    <div class="link">
-                        <h3>Enlaces</h3>
-                        <p>Lorem</p>
-                        <p>Lorem</p>
-                        <p>Lorem</p>
-                        <p>Lorem</p>
-                    </div>
-
-                </div>
-
+   </div>
+              
             </div>
         </div>
-
+        <div class="grupo-2">
+            <small>&copy; 2021 <b>SRi</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+            
+                 
     </footer>
 
+
+    <script src="/js/scroll.js"></script>
+    
+    <script src="/js/animacion.js"></script>
 </body>
 
 </html>
